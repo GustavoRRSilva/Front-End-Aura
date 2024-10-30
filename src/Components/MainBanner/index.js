@@ -5,7 +5,7 @@ export default function MainBanner() {return(
   <section className="mainContent">
     <div className="container">
     <div className="vrImageContent"> 
-    <Image src = {VrImage} width={10} height={VrImage} className="vrImg"/>
+    <Image src = {VrImage} width={10} height={VrImage} className="vrImg" alt="Vr image"/>
     </div>
         <section className="textSection">
         <h1>Revolucionando a Criação com Soluções Automatizadas</h1>
