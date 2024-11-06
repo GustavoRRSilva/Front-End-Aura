@@ -1,107 +1,107 @@
-.header{
-    padding: 20px 60px;
-    background-color: #000000;
-    color: #ffff;
+.header {
+  padding: 20px 60px;
+  background-color: #000000;
+  color: #ffff;
+  display: flex;
+  align-items: center;
+
+  .content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-   
-    .content{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        gap: 20px;
-        max-width: 2000px;
-        margin: auto;
+    width: 100%;
+    gap: 20px;
+    max-width: 2000px;
+    margin: auto;
+  }
+  .auraLogo {
+    width: 150px;
+    height: auto;
+    padding: 0;
+  }
+  .menuIcon,
+  .closeMenu {
+    display: none;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    li {
+      &:hover {
+        color: #ff6600;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      transition: 0.5s;
     }
-    .auraLogo{
-        width: 150px;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .header {
+    padding: 20px;
+    .content {
+      .menuIcon {
+        width: 30px;
+        display: block;
         height: auto;
-        padding: 0;
-    }
-    .menuIcon,.closeMenu{
-        display: none;
-    }
-    ul{
+      }
+      nav,
+      ul {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+      }
+      .navbarOpentrue {
+        display: flex;
+        top: 0; /* Faz o menu descer para a posição visível */
+        opacity: 1; /* Torna o menu visível */
+        transition: top 0.5s ease;
+      }
+      .navbarOpenfalse {
+        top: -100%;
+        transition: top 0.5s ease;
+        opacity: 0.5s ease;
+      }
+      ul {
+        position: fixed;
+        left: 0;
+        width: 100%;
+
+        padding: 30px 0;
+        background-color: #111111;
+        text-align: center;
+        align-items: flex-end;
         gap: 20px;
-        font-weight: bold;
-        font-size: 20px;
-        li{
-            &:hover{
-                color: #FF6600;
-                transition: 0.5s;
-                cursor: pointer;
-            }
-            transition: .5s;
+        opacity: 0;
+        transition: top 0.5s ease;
+        opacity: 0.5s ease;
+        li {
+          padding: 15px 20px;
+          width: 60%;
+          margin: 10px auto;
+          color: #fff;
+          background-color: #222;
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          transition: background-color 0.3s ease, transform 0.3s ease;
+          &:hover {
+            background-color: #ff6600;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+          }
         }
+        .closeMenu {
+          display: block;
+          width: 20px;
+          height: 20px;
+          margin-right: 20px;
+        }
+      }
     }
-}
-
-@media screen and (max-width:776px) {
-    .header{
-        padding: 20px ;
-        .content{
-            .menuIcon{
-               width: 30px;
-               display: block;
-               height: auto;
-            }
-           nav,ul{
-            display: flex;
-            flex-direction: column;
-           }
-           .navbarOpentrue{
-            display: flex;
-            top: 0; /* Faz o menu descer para a posição visível */
-            opacity: 1; /* Torna o menu visível */
-            transition: top 0.5s ease; 
-           }
-           .navbarOpenfalse{
-            top: -100%;
-            transition: top 0.5s ease; 
-            opacity: 0.5s ease; 
-           }
-           ul{
-            position: fixed;
-            left: 0;
-            width: 100%;
-            
-            padding: 30px 0;
-            background-color: #111111;
-            text-align: center;
-            align-items: flex-end;
-            gap: 20px;
-            opacity: 0; 
-            transition: top 0.5s ease; 
-            opacity: 0.5s ease; 
-            li {
-                padding: 15px 20px; 
-                width: 60%; 
-                margin: 10px auto; 
-                color: #fff;
-                background-color: #222; 
-                border: none; 
-                border-radius: 10px;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-                transition: background-color 0.3s ease, transform 0.3s ease; 
-                &:hover {
-                  background-color: #ff6600; 
-                  color: #fff;
-                  transform: translateY(-2px);
-                  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
-                }
-           }
-           .closeMenu{
-            display: block;
-            width: 20px;
-            height: 20px;
-            margin-right: 20px;
-           
-        }
-
-        }
-    }
-}
+  }
 }
