@@ -1,27 +1,36 @@
+body {
+    overflow-x: hidden;
+}
+
+div.banner {
+    background: linear-gradient(#353535, #E74D0C);
+}
+
 div.valoresBanner {
-    background: linear-gradient(to bottom,#353535,#E74D0C);
     padding: 20px 40px 0px 40px;
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
     max-width: 2000px;
+    width: 100%;
     margin: auto;
-  
-
 }
 
-image {
+.image, .imgInovacao, .imgPrecisao {
+    max-width: 100%;
+    height: auto;
     border-radius: 25px;
 }
 
-div.valoresBanner h1{
+div.valoresBanner h1 {
     color: #FFFFFF;
     justify-content: center;
     text-align: center;
     font-size: 60px;
     padding: 20px;
 }
-div.inovacao h2{
+
+div.inovacao h2 {
     color: #FFFFFF;
     font-size: 40px;
 }
@@ -30,15 +39,24 @@ div.inovacao p {
     font-size: 20px;
     color: #FFFFFF;
 }
-    
-div.inovacao{
+
+div.inovacao {
     display: flex;
-    padding: 50px;
+    padding: 30px;
     justify-content: center;
+    max-width: 100%;
 }
-div.text{
+
+div.text {
     display: flex;
     flex-direction: column;
     padding: 40px;
-    
+}
+
+#textLeft {
+    text-align: left;
+}
+
+#textRight {
+    text-align: right;
 }
