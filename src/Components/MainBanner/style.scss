@@ -1,152 +1,151 @@
-.container{
-    background: linear-gradient(to bottom, #E74D0C,  #353535);
-    padding:20px 40px 0px 40px;
+.container {
+  background: linear-gradient(to bottom, #e74d0c, #353535);
+  padding: 20px 40px 0px 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  max-width: 2000px;
+  margin: auto;
+  .vrImageContent {
+    width: 50%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-end;
+    max-width: 500px;
+    .vrImg {
+      width: 100%;
+      height: auto;
+      max-width: 500px;
+    }
+  }
+
+  .textSection {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-    max-width: 2000px;
-        margin: auto;
-    .vrImageContent{
-        width: 50%;
-        display: flex;
-        align-items: flex-end;
-        .vrImg{
-            width: 100%;
-            height: auto;
-            max-width: 500px;
-        }
+    align-items: flex-end;
+    color: #fff;
+    width: 50%;
+    max-width: 700px;
+    text-align: right;
+    h1 {
+      font-size: 4em;
+      text-wrap: wrap;
+      font-weight: bold;
+      max-width: 750px;
     }
-
-    .textSection{
-        padding-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: flex-end;
-        color: #fff;
-        width: 50%;
-        
-        text-align: right;
-        h1{
-            font-size: 4em;
-            text-wrap: wrap;
-            font-weight:bold;
-           max-width: 750px;
-        }
-        p{
-          text-wrap: wrap;
-            font-size: 1.5em;
-            font-weight: 600;
-            max-width: 750px;
-        }
-        button{
-            padding: 10px 5px;
-            background-color: #E74D0C;
-            outline: 0;
-            color: #fff;
-            font-weight: 600;
-            border-radius: 6px;
-            border: none;
-            font-size: 1em;
-            transition: 0.5s;
-            &:hover{
-                background-color: #353535;
-                transition: 0.5s;
-                cursor: pointer;
-            }
-        }
+    p {
+      text-wrap: wrap;
+      font-size: 1.5em;
+      font-weight: 600;
+      max-width: 750px;
     }
-
+    button {
+      padding: 10px 5px;
+      background-color: #e74d0c;
+      outline: 0;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 6px;
+      border: none;
+      font-size: 1em;
+      transition: 0.5s;
+      &:hover {
+        background-color: #353535;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+    }
+  }
 }
 
-.mainContent{
-    background: linear-gradient(to bottom, #E74D0C,  #353535);
-    width: 100%;
+.mainContent {
+  background: linear-gradient(to bottom, #e74d0c, #353535);
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
-   .container{
-    .textSection{
-        h1 {
-            font-size: 3em; 
-        }
-        p {
-            font-size: 1.3em; 
-        }
-        button {
-            font-size: 0.9em; 
-        }
+  .container {
+    .textSection {
+      h1 {
+        font-size: 3em;
+      }
+      p {
+        font-size: 1.3em;
+      }
+      button {
+        font-size: 0.9em;
+      }
     }
-   }
+  }
 }
 
 @media (max-width: 992px) {
-    .container{
-        .textSection{
-            h1 {
-                font-size: 2.5em; 
-            }
-            p {
-                font-size: 1.2em; 
-            }
-            button {
-                font-size: 0.8em; 
-            }
-        }
+  .container {
+    .textSection {
+      h1 {
+        font-size: 2.5em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      button {
+        font-size: 0.8em;
+      }
     }
+  }
 }
 
 @media (max-width: 768px) {
-   .container{
-    .textSection{
-        h1 {
-            font-size: 2em; 
-        }
-        p {
-            font-size: 1em; 
-        }
-        button {
-            font-size: 0.7em; 
-        }
+  .container {
+    .textSection {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
+      button {
+        font-size: 0.7em;
+      }
     }
-   }
+  }
 }
 
-@media screen and (max-width:630px) {
-    .container{
-        flex-direction: column;
-        .textSection,.vrImageContent{
-            width: 100%;
-        }
-        .vrImageContent{
-            .vrImg{
-               max-width: 300px;
-               margin: 0 auto;
-            }
-        }
-        .textSection{
-            text-align: center;
-            max-width: 600px;
-            button{
-                width: 100%;
-                font-size: 1em;
-            }
-        }
+@media screen and (max-width: 630px) {
+  .container {
+    flex-direction: column;
+    .textSection,
+    .vrImageContent {
+      width: 100%;
     }
+    .vrImageContent {
+      .vrImg {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    }
+    .textSection {
+      text-align: center;
+      max-width: 600px;
+      button {
+        width: 100%;
+        font-size: 1em;
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
-    .container{
-        .textSection{
-            h1 {
-                font-size: 1.5em; 
-            }
-            p {
-                font-size: 0.9em; 
-            }
-            
-        }
+  .container {
+    .textSection {
+      h1 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 0.9em;
+      }
     }
+  }
 }
-
