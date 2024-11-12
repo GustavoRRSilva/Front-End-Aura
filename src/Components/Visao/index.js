@@ -7,11 +7,13 @@ export default function Visao() {
     <section className="visaoSection">
       <div className="visaoContainer">
         <div className="textSection">
-          <h2>VISÃO</h2>
-          <p>
-            Ser o parceiro tecnológico ideal para quem deseja <br />
-            estar á frente na era digital.
-          </p>
+          <div className="text">
+            <h2>VISÃO</h2>
+            <p>
+              Ser o parceiro tecnológico ideal para quem deseja <br />
+              estar á frente na era digital.
+            </p>
+          </div>
         </div>
         <div className="imageContent">
           <Image

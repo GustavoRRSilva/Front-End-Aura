@@ -1,19 +1,19 @@
 .missaoSection {
   background: linear-gradient(to bottom, #353535, #2b1d1d);
-  padding: 40px 20px;
+  padding: 20px 40px 0px 40px;
 }
 
 .missaoContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
-  gap: 20px;
   max-width: 2000px;
   margin: auto;
 
   .imageContent {
-    width: 50%;
     margin-top: 50px;
+    width: 50%;
+    max-width: 700px;
     .missaoImg {
       width: 100%;
       height: auto;
@@ -24,51 +24,87 @@
 
   .textSection {
     color: #fff;
-    width: 593px;
-    height: 241px;
+    width: 50%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;
     margin-top: 100px;
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        font-weight: 500;
+        font-size: 4em;
+        line-height: 78px;
+        margin: 0;
+        letter-spacing: 0.2em;
+        text-align: center;
+        width: max-content;
+      }
 
-    h2 {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 500;
-      font-size: 60px;
-      line-height: 78px;
-      margin: 0;
-      letter-spacing: 0.49em;
-    }
-
-    p {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 26px;
-      margin: 0;
-      padding: 30px 0;
-      margin-right: 30px;
+      p {
+        font-weight: 400;
+        font-size: 1.4em;
+        margin: 0;
+        padding: 30px 0;
+        text-align: center;
+      }
     }
   }
 }
 
-@media (max-width: 630px) {
-  .missaoContainer {
-    flex-direction: column;
-    .imageContent,
-    .textSection {
-      width: 100%;
-    }
-    .imageContent {
-      .missaoImg {
-        max-width: 300px;
-        margin: 0 auto;
+@media (max-width: 776px) {
+  .missaoSection {
+    padding: 20px;
+    .missaoContainer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .imageContent,
+      .textSection {
+        width: 100%;
+      }
+      .imageContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .missaoImg {
+          width: 100%;
+        }
+      }
+      .textSection {
+        margin-top: 40px;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        h2 {
+          font-size: 3em;
+          letter-spacing: 0.2em;
+        }
+        p {
+          margin: 0;
+          font-size: 1.5em;
+          max-width: 100%;
+        }
       }
     }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .missaoContainer {
     .textSection {
-      text-align: center;
+      h2 {
+        font-size: 2.4em;
+      }
+      p {
+        font-size: 1.2em !important;
+      }
     }
   }
 }

@@ -1,20 +1,23 @@
 .visaoSection {
   background: linear-gradient(to top, #353535, #2b1d1d);
-  padding: 40px 20px;
+  padding: 20px;
 }
 
 .visaoContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
-  gap: 20px;
   max-width: 2000px;
   margin: auto;
-  flex-direction: row; 
+  flex-direction: row;
 
   .imageContent {
-    width: 50%;
     margin-top: 50px;
+    width: 50%;
+    max-width: 700px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
     .visaoImg {
       width: 100%;
       height: auto;
@@ -25,32 +28,34 @@
 
   .textSection {
     color: #fff;
-    width: 593px;
-    height: 241px;
+    width: 50%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
     margin-top: 100px;
 
-    h2 {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 500;
-      font-size: 60px;
-      line-height: 78px;
-      margin: 0;
-      letter-spacing: 0.49em;
-    }
+    .text {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      h2 {
+        font-weight: 500;
+        font-size: 4em;
+        line-height: 78px;
+        letter-spacing: 0.49em;
+      }
 
-    p {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 26px;
-      margin: 0;
-      padding: 30px 0;
-      margin-left: 0; 
+      p {
+        font-weight: 400;
+        font-size: 1.3em;
+        line-height: 26px;
+        margin: 0;
+        padding: 30px 0;
+        margin-left: 0;
+      }
     }
   }
 }
@@ -70,6 +75,87 @@
     }
     .textSection {
       text-align: center;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .textSection {
+    .text {
+      h2 {
+        font-size: 50px;
+        line-height: 65px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .textSection {
+    .text {
+      h2 {
+        font-size: 40px;
+        line-height: 55px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: 776px) {
+  .visaoContainer {
+    flex-direction: column;
+
+    .imageContent,
+    .textSection {
+      width: 100%;
+    }
+
+    .imageContent {
+      order: 0;
+      .visaoImg {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .textSection {
+      align-items: center;
+      order: 2;
+      margin-top: 40px;
+      .text {
+        h2 {
+          font-size: 3em;
+          line-height: 42px;
+          margin-left: 0;
+          letter-spacing: 0.2em;
+        }
+
+        p {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .visaoContainer {
+    .textSection {
+      .text {
+        h2 {
+          font-size: 2.4em;
+        }
+        p {
+          font-size: 1.2em;
+        }
+      }
     }
   }
 }
