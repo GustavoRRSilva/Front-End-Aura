@@ -1,0 +1,77 @@
+.allContent {
+  background: #1e201e;
+  width: 100%;
+
+  ::-webkit-scrollbar {
+    height: 12px; /* Altura da barra de rolagem */
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #fc8019;
+    border-radius: 10px;
+    border: 2px solid #1e201e; /* Espaçamento ao redor do polegar */
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #353535; /* Cor do trilho */
+    border-radius: 10px;
+  }
+  .content {
+    display: flex;
+    max-width: 2000px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    flex-direction: column;
+    color: white;
+    h2 {
+      font-size: 4em;
+      color: white;
+      font-weight: 400;
+      margin: 40px 0px;
+      text-align: center;
+    }
+    .allDepoiments {
+      display: flex;
+      gap: 20px;
+
+      overflow-x: auto;
+      max-width: 2000px;
+      .depoimento {
+        min-width: 400px;
+        background: linear-gradient(180deg, #fc8019 0%, #000 100%);
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin: 0px auto;
+      }
+      .imgName {
+        display: flex;
+        gap: 10px;
+        img {
+          max-width: 70px;
+          height: auto;
+        }
+      }
+      p {
+        margin-top: 20px;
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .allContent {
+    .content {
+      h2 {
+        font-size: 2em;
+      }
+      .allDepoiments {
+        .depoimento {
+          max-width: 80%;
+          min-width: 80%;
+          p {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
