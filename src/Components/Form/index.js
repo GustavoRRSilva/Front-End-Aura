@@ -26,7 +26,7 @@ export default function Form() {
   };
 
   return (
-    <section className="formSection">
+    <section className="formSection" id="forms">
       <div className="content">
         <Image
           height={10}

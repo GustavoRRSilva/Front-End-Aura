@@ -49,7 +49,7 @@ export default function Depoimentos() {
     },
   ];
   return (
-    <section className={styles.allContent}>
+    <section className={styles.allContent} id="depoimentos">
       <div className={styles.content}>
         <h2>Depoimentos</h2>
         <div className={styles.allDepoiments}>

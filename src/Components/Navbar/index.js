@@ -37,11 +37,18 @@ export default function Navbar() {
               width={10}
               alt="Icon to close the menu"
             />
-            <li>Home</li>
-            <li>Sobre</li>
-            <li>Serviços</li>
-            <li>Depoimentos</li>
-            <li>Formulário</li>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#servicos">Serviços</a>
+            </li>
+            <li>
+              <a href="#depoimentos">Depoimentos</a>
+            </li>
+            <li>
+              <a href="#forms">Formulário</a>
+            </li>
           </ul>
         </nav>
       </div>

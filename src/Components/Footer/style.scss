@@ -67,15 +67,14 @@ footer ul {
 @media (max-width: 768px) {
   footer {
     padding: 20px;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    height: auto;
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      height: auto;
+    }
   }
 
   .logo {

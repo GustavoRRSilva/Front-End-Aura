@@ -24,7 +24,7 @@ export default function Servicos() {
     },
   ];
   return (
-    <div className={styles.allContent}>
+    <div className={styles.allContent} id="servicos">
       <div className={styles.content}>
         <h2>SERVIÇOS</h2>
         <Image
