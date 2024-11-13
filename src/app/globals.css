@@ -16,6 +16,10 @@ ul {
   display: block;
 }
 
+a {
+  color: white;
+}
+
 a:visited {
   color: inherit;
 }
